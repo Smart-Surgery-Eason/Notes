@@ -1,0 +1,41 @@
+steps to reproduce
+
+1. run command:
+pip install monai-deploy-app-sdk
+
+2. Install cuda-toolkit.
+
+3. run command:
+export PATH=/usr/local/cuda-12.5/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64:$LD_LIBRARY_PATH
+sudo apt install docker-buildx
+git clone --branch main --depth 1 https://github.com/Project-MONAI/monai-deploy-app-sdk.git
+cd monai-deploy-app-sdk
+pip install scikit-image, setuptools, Pillow, matplotlib
+chmod +777 /tmp/requirements.txt
+monai-deploy package examples/apps/simple_imaging_app -c examples/apps/simple_imaging_app/app.yaml -t simple_app:latest --platform x64-workstation -l DEBUG
+
+Error:
+
+#19 [14/19] RUN pip install --no-cache-dir --user -r /tmp/requirements.txt
+#19 0.408 ERROR: Could not open requirements file: [Errno 13] Permission denied: '/tmp/requirements.txt'
+#19 ERROR: process "/bin/sh -c pip install --no-cache-dir --user -r /tmp/requirements.txt" did not complete successfully: exit code: 1
+------
+ > [14/19] RUN pip install --no-cache-dir --user -r /tmp/requirements.txt:
+0.408 ERROR: Could not open requirements file: [Errno 13] Permission denied: '/tmp/requirements.txt'
+------
+WARNING: local cache import at /home/ubuntu/.holoscan_build_cache not found due to err: could not read /home/ubuntu/.holoscan_build_cache/index.json: open /home/ubuntu/.holoscan_build_cache/index.json: no such file or directory
+Dockerfile:72
+--------------------
+  70 |
+  71 |     RUN pip install --upgrade pip
+  72 | >>> RUN pip install --no-cache-dir --user -r /tmp/requirements.txt
+  73 |
+  74 |
+--------------------
+ERROR: failed to solve: process "/bin/sh -c pip install --no-cache-dir --user -r /tmp/requirements.txt" did not complete successfully: exit code: 1
+[2024-07-15 10:00:51,769] [INFO] (packager) - Build Summary:
+
+Platform: x64-workstation/dgpu
+    Status: Failure
+    Error:  Error building image: see Docker output for additional details.
