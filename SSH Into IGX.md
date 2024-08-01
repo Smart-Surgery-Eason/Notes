@@ -1,3 +1,19 @@
+## Quick Start
+On your PC, run:
+```powershell
+ssh smartsurgery@192.168.1.224
+```
+follow the prompt, and enter the password. If you don't know the password, ask **Eason**.
+
+If it shows `ssh: connect to host 192.168.1.224 port 22: Connection timed out`. Go to the IGX and run,
+```bash
+sudo systemctl restart ssh
+```
+and run `ssh smartsurgery@192.168.1.224` again on your PC.
+
+If it still not working, ask **Eason** first, or follow the [Full Instruction](#full-instruction).
+
+## Full Instruction
 ### Step 1 - Check SSH Server Status
 On the IGX Machine, enter the following command:
 ```bash
