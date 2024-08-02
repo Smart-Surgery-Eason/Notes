@@ -9,7 +9,7 @@ If it shows `ssh: connect to host 192.168.1.224 port 22: Connection timed out`. 
 ```bash
 sudo systemctl restart ssh
 ```
-and run `ssh smartsurgery@192.168.1.224` again on your PC.
+run `ssh smartsurgery@192.168.1.224` again on your PC.
 
 If it still not working, ask **Eason** first, or follow the [Full Instruction](#full-instruction).
 

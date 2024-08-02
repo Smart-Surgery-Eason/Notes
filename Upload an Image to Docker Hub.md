@@ -33,7 +33,7 @@ docker search easonli0701
 **Output:**
 ```
 NAME                       DESCRIPTION   STARS     OFFICIAL
-easonli0701/simple-app                   0
+easonli0701/simple-app    
 ```
 # Extras
 
