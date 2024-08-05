@@ -1,5 +1,4 @@
 # IGX
-
 IGPU
 drvier不要動，它綁在系統裡面，igpu的特性
 系統底層架構，ubuntu改成jetson
