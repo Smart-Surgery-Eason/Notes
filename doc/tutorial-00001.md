@@ -1,4 +1,17 @@
 # Upload an Image to Docker Hub
+## Quick Start
+Assume you have an tagged image `easonli0701/simple-app:latest` and you've logged in by user name `easonli0701`. Simply run:
+```bash
+docker push easonli0701/simple-app:latest
+```
+It will push the image to your docker hub.
+
+You can varify this by:
+```bash
+curl -s -u easonli0701:password https://hub.docker.com/v2/repositories/easonli0701/ | jq '.results[].name' -r
+```
+replace the `password` with the password of `easonli0701`.
+## Tutorial
 ### Step 1: Log In to Docker Hub
 ```bash
 docker login -u easonli0701 -p yourpassword
@@ -28,8 +41,10 @@ docker push easonli0701/simple-app:latest
 ```
 ### Step 5: Verify the Upload
 ```bash
-docker search easonli0701
+curl -s -u easonli0701:password https://hub.docker.com/v2/repositories/easonli0701/ | jq '.results[].name' -r
 ```
+replace the `password` with the password of `easonli0701`.
+
 **Output:**
 ```
 NAME                       DESCRIPTION   STARS     OFFICIAL
@@ -40,7 +55,7 @@ easonli0701/simple-app
 ### Verify Login
 **PowerShell:**
 ```bash
-docker-credential-desktop list  
+docker-credential-desktop list
 ```
 - **Output:**
 ```

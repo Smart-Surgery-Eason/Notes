@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="//cdn.datatables.net/2.1.3/js/dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.min.css"/>
+    </head>
+    <body>
+        <h1>Document Tracker</h1>
+        <table id="example" class="display">
+            <thead><tr><th>ID</th><th>Name</th><th>Type</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>0</td><td>Document Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>1</td><td>Tracker Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>2</td><td>Experiment Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>3</td><td>Dialogue Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>4</td><td>Issue Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>5</td><td>ChatGPT Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>6</td><td>References Tracker</td><td>Tracker</td><td>draft</td></tr>
+                <tr><td>7</td><td>Tutorial Tracker</td><td>Tracker</td><td>draft</td></tr>
+            </tbody>
+            <tfoot><tr><td>Sum</td><td></td><td>$180</td></tr></tfoot>
+        </table>
+        <script>
+            $('#example').DataTable();
+            $('#example tbody tr').each(function(){
+                
+            })
+        </script>
+    </body>
+
+</html>
+
