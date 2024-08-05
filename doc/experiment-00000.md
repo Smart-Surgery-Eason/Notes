@@ -7,7 +7,7 @@ sudo systemctl --help
 will shows things like this,
 ```
 Query or send control commands to the system manager.
-Unit Ciommands:
+Unit Commands:
 ...
 ```
  with a lot of commands. 
@@ -43,7 +43,7 @@ I found that there are some basic terminology that I need to figure out. By abse
 - Sockets
 - Timers
 
-It looks like some fundamental things in **System Manager**. I will put these things in [**Futher Research**](#futher-research).
+It looks like some fundamental things in **System Manager**. I will put these things in [**Futher Research**](#2-futher-research).
 ### 3. Selected commands
 Finally here are the fundamental commands I consider as fundamental by their name, prioritized according to my initiation:
 - [list-units](#1-list-units)
