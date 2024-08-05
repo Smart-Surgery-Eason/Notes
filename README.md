@@ -14,8 +14,8 @@
 - Tutorial
 
 
-[experiment-tracker]: doc\experiment-tracker.md
-[dialogue-tracker]: doc\dialogue-tracker.md
-[issue-tracker]: doc\issue-tracker.md
-[chatgpt-tracker]: doc\chatgpt-tracker.md
-[tutorial-tracker]: doc\tutorial-tracker.md
+[experiment-tracker]: doc/experiment-tracker.md
+[dialogue-tracker]: doc/dialogue-tracker.md
+[issue-tracker]: doc/issue-tracker.md
+[chatgpt-tracker]: doc/chatgpt-tracker.md
+[tutorial-tracker]: doc/tutorial-tracker.md
