@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="//cdn.datatables.net/2.1.3/js/dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.min.css"/>
+    </head>
+    <body>
+        <h1>HTML Tracker Tracker</h1>
+        <table id="table" class="display">
+            <thead><tr><td>ID</td><td>Name</td><td>Description</td><td>Type</td><td>Status</td></tr></thead>
+            <tbody>
+                <tr><td>0</td><td><a href="html-00000.html">Document Tracker</a><td></td></td><td>tracker</td><td>running</td></tr>
+                <tr><td>1</td><td><a href="html-00001.html">File Tracker</a><td></td></td><td>tracker</td><td>running</td></tr>
+                <tr><td>2</td><td><a href="html-00002.html">HTML Tracker</a><td></td></td><td>tracker</td><td>running</td></tr>
+                <tr><td>2</td><td><a href="html-00003.html">Experiment Tracker</a><td></td></td><td>tracker</td><td>running</td></tr>
+            </tbody>
+        </table>
+        <script>
+            $('#table').DataTable();
+        </script>
+    </body>
+</html>

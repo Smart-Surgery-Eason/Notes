@@ -16,9 +16,6 @@
 - [References](doc\reference.md)
 - [Tutorial][tutorial-tracker]
 
-<iframe src="./html/html-00001.html" width="100%" height="500px"></iframe>
-
-{% include html/html-00000.html %}
 
 [tracker-tracker]: doc/tracker-00000.md
 [experiment-tracker]: doc/tracker-00001.md

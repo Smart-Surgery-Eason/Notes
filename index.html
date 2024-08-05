@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <script>
+            function windowOnLoad(){
+                fetch('html/html-00001.html')
+                .then(response => response.text())
+                .then(data=>{
+                    document.getElementById('content').innerHTML = data;
+                });
+            }
+
+            window.onload = windowOnLoad;
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+    </body>
+</html>
+
