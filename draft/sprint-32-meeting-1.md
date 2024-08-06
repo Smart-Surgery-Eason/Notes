@@ -25,14 +25,44 @@
 - **ISO27001:** Knowign the outline and let everyone know, ecpet engineering theam because we are busy until Octorber.
 - **Security:** This is for engineering them, will start at **November**.
 - Ask MonRong if we got any problem.
+### Github Repo Naming Convention
+Template:
+```
+clinical-service-teck-owner
+```
+Example:
+```
+dentistry-data-label 
+dentistry-train-pytorch (Boan)
+urology-train-tensorflow (Boan)
+dentistry-inference-pytorch ()
+dentistry-inference-holoscan
+urology-inference-holoscan
+foundation-blazor-wasm
+foundation-blazor-webapp
 
+```
+```
++-----------+-----------+-----------+-----------+
+| DATA      | TRANING   | INFERENCE | FONDATION |
++-----------+-----------+-----------+-----------+
+| Lable     |           |           |           |
+| Datalake  |           |           |           |
+| Pipeline  |           |           |           | 
+|           |           |           |           | 
+|           |           |           |           | 
+|           |           |           |           | 
+|           |           |           |           |
++-----------+-----------+-----------+-----------+ 
+```
+
+ 
 ## Future Metting
 |Name|Participant|Time|
 |-|-|-|
 |ITRI Dentistry|ITRI, Boan, ZenFeng, Manchi|Aug 8, 2024 (Wed) 14:00|
-|Urology Images|Boan, Zenfeng, Tiong|Aug 8, 2024 (Thu)|
-
- ## Future Work
+|Urology Images|Boan, Zenfeng, Tiong|Aug 8, 2024 (Thu) after 15:00|
+## Future Work
 |Name|Description|Assignee|Deadline|
 |-|-|-|-|
 |Old Manual Measurement|Find old manual measurement source code (C#) written by Charlie|Boan||
@@ -46,11 +76,9 @@
 |Recording|OBS, Operator|Eason|Aug 9|
 |LC Translate .h5 -> .onnx||Ezra|Aug 9|
 |UI/UX|the UI we need to use in singapore October, we prefer to create a program that auto start the program and start inference when power on, I need to create a draft with only functions we need and pass to Jiang|Eason|Aut 9|
-
-
 ## Questions
 |Name|Description|Asked|Solved|
 |-|-|-|-|
-|Jira Link|Cause by or Related to|no|no|
-|Dentist pipeline|There is picture they shared to we have define the works|no|no|
-|||||
+|Jira Link|Cause by or Related to|yes|yes|
+|Dentist pipeline|There is picture they shared to we have define the works|yes|yes|
+|How to name the central doc repo in our convention?||no|no|
