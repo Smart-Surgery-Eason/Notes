@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="message"><span class="lable">Message: </span><span class="value">N/A</span></div>
+        <button class="hello-world">Click Me!</button>
+        <script>
+            $("button.hello-world").click(function(){
+                $(".message .value").html("Hello, World!")
+            })
+        </script>
+    </body>
+</html>
+
