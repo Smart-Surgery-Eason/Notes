@@ -1,2 +1,2 @@
 # To-do list
-- [X] something
+- [] something
