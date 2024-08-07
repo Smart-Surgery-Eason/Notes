@@ -10,7 +10,7 @@ python -m http.server -d lab\jquery-basics-01\
 
 ## Tutorial
 1. Open [index.html][index-html].
-2. Inclue JQuery:
+2. Include JQuery:
 ```html
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 ```
@@ -27,6 +27,10 @@ python -m http.server -d lab\jquery-basics-01\
 Notice that in `$(query_string)` the `query_string` follow the css rules.
 We can use `.click` and `.html` to manipulate the value of the **html element**s.
 
+## Future Work
+- Find the type of \$
+- Find the return type of \$()
+- Find the important methods of \$()
 
 ## Reference
 [index.html][index-html]
