@@ -1,0 +1,47 @@
+.alert {
+    margin: 20px;
+    padding: 5px 15px; /* Adjust padding to make room for the icon */
+    border-radius: 3px;
+    border-left: 4px solid;
+}
+.alert::before{
+    margin-bottom:3px;
+    display: block;
+    font-weight: bold;
+}
+
+.note {
+    border-color: #007acc;
+}
+.note::before {  
+    color: #007acc;
+    content: 'Note ';
+}
+.tip {
+    border-color: #3fb950;
+}
+.tip::before {  
+    color: #3fb950;
+    content: 'Tip ';
+}
+.important {
+    border-color: #ab7df8;
+}
+.important::before {  
+    color: #ab7df8;
+    content: 'Important ';
+}
+.warning {
+    border-color: #d29922;
+}
+.warning::before {  
+    color: #d29922;
+    content: 'Warning ';
+}
+.caution {
+    border-color: #f85149;
+}
+.caution::before {  
+    color: #f85149;
+    content: 'Caution ';
+}
