@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://gist.github.com/s7887177/4992236d88d14673e7b2f07835e2ec5c/raw/eason-style.css">
+<link rel="stylesheet" href="./eason-style.css">
 
 <!-- <link rel="stylesheet" type="text/css" href="./eason-style.css"> -->
 # List Repository Teams

@@ -1,0 +1,32 @@
+# Holoscan Progress Overview: Sprint 30
+## Outline
+
+
+
+### Show Case 1: Run Holoscan App on Different Environment
+|Machine|Environment|Dentistry|Endoscopy Example|
+|-|-|-|-|
+|Coder g5|Docker|✅|⛔ X Forward not setup|
+|Coder g5|Local|⛔ Due to env setup|⛔ Due to env setup|
+|g5|Docker|✅|✅|
+|g5|Local|⛔Due to env setup|⛔Due to env setup|
+|IGX|Docker|✅|✅|
+|IGX|Local|✅|✅|
+
+### Show Case 2: Monai Deploy Packaging
+|Machine|Environment|simple_imaging_app|
+|-|-|-|
+|g5|Local|✅|
+|IGX|Local|✅|
+
+### Show Case 3: Run Monai Deploy Package
+|Machine|Environment|simple_imaging_app|
+|-|-|-|
+|g5|Docker|✅|
+|IGX|Docker|✅|
+
+
+
+**IGX**
+
+### Show C

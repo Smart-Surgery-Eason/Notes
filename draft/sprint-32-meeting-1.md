@@ -2,7 +2,6 @@
 ## Outline
 
 
-
 ### Jira Tickets
 - Move all the card to done.
 - Theoraticllay, a card should be done in one sprint. it there is any reaason couldn't be done. Should be split into two tickets or more.

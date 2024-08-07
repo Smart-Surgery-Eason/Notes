@@ -9,14 +9,12 @@
 - [ ] Confirm with julie a date of the Endoscopy hardware.
 - [ ] Draw a holoscan workflow. (Ezra)
 - [ ] Run the example [h264_endoscopy_tool_tracking](https://github.com/nvidia-holoscan/holohub/tree/main/applications/h264/h264_endoscopy_tool_tracking), read documentation first
+- [ ] gitbook
 ### Sprints
-
-- **Sprint 32**: Finish Dentistry, Automation.
+- **Sprint 32**: Finish Dentistry, Start up Automation.
 - **Sprint 34**: Urology Phase 1: Precision not important, a mvp. (Automation)
-- **Sprint 36**: Urology Phase 2: Improvement
-  - Precision: 
-- **Sprint 38**: Urology Pahse 3: Atery and vien
-
+- **Sprint 36**: Urology Phase 2: Improvement precision and stablity.
+- **Sprint 38**: Urology Pahse 3: the precision of atery and vien.
 ### Workflow
 - Input:
   - Use YAUN Q-Cap and its API
