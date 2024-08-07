@@ -17,6 +17,8 @@
     - [ ] [Board](https://smartsurgerytek.atlassian.net/jira/software/projects/MSA/boards/12)
   - [ ] Notes
     - [ ] draft-meetings
+      - [ ] [1](../draft/sprint-32-meeting-1.md)
+      - [ ] [2](../draft/sprint-32-meeting-2.md)
   - [ ] Gmail
   - [ ] Personal
     - [ ] Julie
