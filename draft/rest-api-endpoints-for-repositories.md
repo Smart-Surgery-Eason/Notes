@@ -1,6 +1,6 @@
 # List Repository Teams
 
-[!NOTE]
+> [!NOTE]
 
 ## Reference
 [REST API endpoints for repositories][rest-api-endpoints-for-repositories]
