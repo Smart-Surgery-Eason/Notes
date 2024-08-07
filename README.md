@@ -24,3 +24,7 @@
 [chatgpt-tracker]: doc/tracker-00004.md
 [tutorial-tracker]: doc/tracker-00006.md
 [status-tracker]: doc/tracker-00007.md
+
+### References
+- [To-do](./todo/README.md)
+- [calendar](https://calendar.google.com/)
