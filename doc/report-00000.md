@@ -1,7 +1,5 @@
-# Holoscan Progress Overview: Sprint 30
+# Holoscan Progress Review: Sprint 30
 ## Outline
-
-
 
 ### Show Case 1: Run Holoscan App on Different Environment
 |Machine|Environment|Dentistry|Endoscopy Example|
@@ -13,7 +11,7 @@
 |IGX|Docker|✅|✅|
 |IGX|Local|✅|✅|
 
-### Show Case 2: Monai Deploy Packaging
+### Show Case 2: Packaging Monai Deploy Application on Different Environment
 |Machine|Environment|simple_imaging_app|
 |-|-|-|
 |g5|Local|✅|
@@ -25,8 +23,3 @@
 |g5|Docker|✅|
 |IGX|Docker|✅|
 
-
-
-**IGX**
-
-### Show C
