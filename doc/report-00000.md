@@ -6,7 +6,7 @@
 - We can run the **dentistry app** on **IGX**. (⛔refine this)
 
 - The **dentistry app** can do inference from a `.onnx` model which is converted from a trained `.h5` model that provided by **Yita Sheng**'s training app.
-- The **dentistry app** can take a **video** as input and output a sequence of images. the **video** is converted from **a sequence of dental x-ray images**.
+- The **dentistry app** can take a **video** as input and output a sequence of images. The **video** is converted from **a sequence of dental x-ray images**.
 
 ### Multi-AI Endoscopy
 - We can run **[multiai_endoscopy][multiai-endoscopy]** on IGX. (⛔should link to a external document that describe its progress)
