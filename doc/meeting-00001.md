@@ -17,4 +17,13 @@ The Charlie
 
 ### A better name of these two 
 ---
-Next Week, Image-in-in
+Next week, image-in-image-out, video streaming application + ai inference, with our own model. 
+boan build which kind of model?
+end-to-end to prove.
+ci-cd graph.
+versioning. combine patch.
+branching github flow.
+gitbook. manchi trying gitbook.
+record. 
+holoviz.
+rec

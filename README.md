@@ -8,4 +8,4 @@ For viewing the descriptions and entries for each document type. See [Type Track
 - [Describe the detail progress on what we achieved](doc/todo-00000)
 - [HoloHub Applications](doc/report-00002.md)
 
-[type-tracker]: ./doc/tracker-00000.md
+[type-tracker]: ./doc/tracker-00000-type.md
