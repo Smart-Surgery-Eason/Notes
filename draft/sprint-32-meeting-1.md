@@ -17,7 +17,7 @@
 ### ITRI: Dentist
 - Zenfeng: 
 - Boan:
-- Manchi: They don't have IA but they can make the measurement. We activate automation via API. They will automate the dental measurement.
+- Manchi: They don't have AI but they can make the measurement. We activate automation via API. They will automate the dental measurement.
 - Julie: They will provide a full mouth panel. **Find Old Manual Measurement Source Code**.
 ### UI/UX
 ### Certification
@@ -56,11 +56,11 @@ foundation-blazor-webapp
 ```
 
  
-## Future Metting
+## Future Meeting
 |Name|Participant|Time|
 |-|-|-|
-|ITRI Dentistry|ITRI, Boan, ZenFeng, Manchi|Aug 8, 2024 (Wed) 14:00|
-|Urology Images|Boan, Zenfeng, Tiong|Aug 8, 2024 (Thu) after 15:00|
+|Dentstry Images|Boan, Zenfeng, Tiong|Aug 8, 2024 (Thu) after 15:00|
+|ITRI Dentistry|ITRI, Boan, ZenFeng, Manchi|Aug 15, 2024 (Thu) 14:00|
 ## Future Work
 |Name|Description|Assignee|Deadline|
 |-|-|-|-|
