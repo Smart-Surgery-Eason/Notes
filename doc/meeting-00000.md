@@ -1,13 +1,13 @@
-# Sprint 32 Metting 1 - Agu 6, 2024 (Tue)
+# Sprint 32 Meeting 1 - Agu 6, 2024 (Tue)
 ## Outline
 
 
 ### Jira Tickets
-- Move all the card to done.
-- Theoraticllay, a card should be done in one sprint. it there is any reaason couldn't be done. Should be split into two tickets or more.
-- Review to done
+- Move all cards to done.
+- Theoraticllay, a card should be done in one sprint. If there is any reason, it should be split into two smaller tickets or more.
+- Review to with your peers and move to done.
 ### Gain Training images from Singapore
-- Boan will get the training images from Singapore doctors 
+- Boan will get the training images from Singapore doctors.
 ### Create a `preparation for urology AI model` ticket for Boan
 - prepare for a dataset
 - review the label result

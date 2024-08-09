@@ -1,4 +1,7 @@
-## About `NVIDIA_VISIBLE_DEVICES` in docker container
+- **Participater:** Ezra, Eason
+
+---
+# About `NVIDIA_VISIBLE_DEVICES` in docker container
 
 Ezra told me this [link](https://docs.nvidia.com/holoscan/sdk-user-guide/use_igpu_with_dgpu.html) containing the command:
 ```bash
