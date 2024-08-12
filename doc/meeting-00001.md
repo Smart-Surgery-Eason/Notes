@@ -7,8 +7,13 @@
 - **4-5pm:** Engineering Best Practices - CI/CD (@all developers)
 - **5-6pm:** OKR Review (each developer)
 
-### LC Model to IGX
-The Charlie 
+### Run LC Model on IGX
+This is for Nvidia. We have to write our own inference. 
+The Charlie's LC model use [detection](#dectection) but not [segmentation](#segmentation).
+Boan provide his [urological model][urological-model]. We decide to use it.
+
+
+### Use Fragment
 
 ### What can we run on IGX
 **video_to_gxf**
@@ -17,6 +22,7 @@ The Charlie
 |Dev|Staging|Deploy|
 |-|-|-|
 |AWS|IGX-Main|IGX-Other|
+
 
 ### the `.so` file in AWS and IGX should be the same
 Though there is 
@@ -33,3 +39,13 @@ gitbook. manchi trying gitbook.
 record. 
 holoviz.
 rec
+
+
+### Terminology
+
+#### Dectection
+
+#### Segmentation
+
+
+[urological-model]: https://huggingface.co/smartsurgery/urology-models/
