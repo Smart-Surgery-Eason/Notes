@@ -19,7 +19,7 @@ The 4 kinds of start configuration are:
 
 ### Sprint 34
 - We will focus on building a mvp of urology app. 
-- We can config IGX to open Dentistry App on Startup. 
+- We can config IGX to open urology App on Startup. 
 - There should be a **Recording Indicator**, **Restart Button**, **Stop/Play Button** and **timeline with the current datetime**. on a control bar.
 - We will test HDMI input by a real **Endoscopy Camera**.
 - We will finish the CI pipeline.

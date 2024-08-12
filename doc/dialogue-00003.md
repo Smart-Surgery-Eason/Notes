@@ -1,1 +1,1 @@
-**Manchi:** There will a internal come near the end of September to deal with AWS S3 bucket setup. I will setup a template for us so don't worried.
+**Manchi:** There will a intern come near the end of September to deal with AWS S3 bucket setup. I will setup a template for us so don't worried.

@@ -7,6 +7,8 @@
 |3|[Tasks planning for Sprint 32 - 38][3]|16:00 Aug 08, 2024, Thu|18:00 Aug 08, 2024, Thu|![In Progress]|Manchi|[doc](./report-00001.md)|
 |4|[Create a ABP Issue: ABP update and license problem][4]|||![Pending]
 |5|[Delete Redundent EC2 Instance][5]|||![In Progress]|||
+|6|[Write a Vi Learning Note][6]|||![In Progress]|Manchi||
+|7|[Smart 360 Project for Dr. Wu][7]||Fri Aug 16 2024 18:00|![In Progress]|Julie||
 
 [0]: ./todo-00000.md
 [1]: ./todo-00001.md
@@ -14,6 +16,8 @@
 [3]: ./todo-00003.md
 [4]: ./todo-00004.md
 [5]: ./todo-00005.md
+[6]: ./todo-00006.md
+
 
 [Pending]: https://img.shields.io/badge/Pending-darkgray
 [Done]: https://img.shields.io/badge/Done-green

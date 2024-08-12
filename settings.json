@@ -1,0 +1,19 @@
+{
+    "openInExternalApp.openMapper": [
+        {
+            // represent file extension name
+            "extensionName": "pptx",
+            // the external applications to open the file which extension name is html
+            "apps": [
+                // openCommand can be shell command or the complete executable application path
+                // title will be shown in the drop list if there are several apps
+                {
+                    "title": "powerpoint",
+                    // This will vary depending on your OS, you can also use a PPT viewer of your chosing
+                    // On Windows, could be Program Files (x86) and a different version of Office, but you get the idea
+                    "openCommand": "C:\\Program Files\\Microsoft Office\\root\\Office16\\powerpnt.exe"
+                },
+            ]
+        }
+    ]
+}
