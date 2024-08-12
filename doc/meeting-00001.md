@@ -13,7 +13,13 @@ The Charlie
 ### What can we run on IGX
 **video_to_gxf**
 
+### CI pipeline devices
+|Dev|Staging|Deploy|
+|-|-|-|
+|AWS|IGX-Main|IGX-Other|
+
 ### the `.so` file in AWS and IGX should be the same
+Though there is 
 
 ### A better name of these two 
 ---

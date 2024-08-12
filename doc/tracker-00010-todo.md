@@ -8,7 +8,7 @@
 |4|[Create a ABP Issue: ABP update and license problem][4]|||![Pending]
 |5|[Delete Redundent EC2 Instance][5]|||![In Progress]|||
 |6|[Write a Vi Learning Note][6]|||![In Progress]|Manchi||
-|7|[Smart 360 Project for Dr. Wu][7]||Fri Aug 16 2024 18:00|![In Progress]|Julie||
+|7|[Smart 360 Project for Dr. Wu][7]||Fri Aug 16 2024 18:00|![In Progress]|Julie|Remember to report things after Mason reply|
 
 [0]: ./todo-00000.md
 [1]: ./todo-00001.md
@@ -17,6 +17,7 @@
 [4]: ./todo-00004.md
 [5]: ./todo-00005.md
 [6]: ./todo-00006.md
+[7]: ./todo-00007.md
 
 
 [Pending]: https://img.shields.io/badge/Pending-darkgray
