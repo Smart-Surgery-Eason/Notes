@@ -1,3 +1,9 @@
+<style>
+    .force-white{
+        color: white;
+    }
+</style>
+
 # Experimental Analysis of Fundamental `systemctl` Commands
 ## 1. Introduction
 Enter the command,
@@ -191,7 +197,7 @@ systemctl list-units --all --state=inactive
 ```
 it shows 189 units, and one of it got my interest: `ssh.service`.
 ### 2. start
-check `ssh.servce` state, via
+check `ssh.servce` states, via
 ```bash
 systemctl list-units ssh.service --all
 ```
@@ -229,10 +235,15 @@ systemctl is-active asdfghhjkl
 
 I start the `ssh.service` via `systemctl start ssh` and exam with `systemctl is-active ssh`, it yields `active`.
 
-This make me feel strange too, because when I enter `systemctl list-units ssh` it shows nothing, but I have to enter `systemctl list-units ssh.service` then it shows things, and I check `systemctl --help` in the command section: `system list-units [PATTERN...]` and `is-active PATTERN...`, Look like the PATTERNs in this too command are parsed differently.
+This make me feel strange too, because when I enter `systemctl list-units ssh` it shows nothing, but I have to enter `systemctl list-units ssh.service` then it shows things, and I check `systemctl --help` in the command section: `system list-units [PATTERN...]` and `is-active PATTERN...`, Look like the PATTERNs in this 2 commands are parsed differently.
 >Ignore about the [] in `system list-units [PATTERN...]`, it just indicate that anything in the [] is optional.
 
 For knowning more about the PATTERN I check the [man page](https://www.man7.org/linux/man-pages/man1/systemctl.1.html). In the `Parameter Syntax` section. It descript that `UNIT` and `PATTERN` are `Parameter`s. `UNIT` could take a unit name and `PATTERN` take multiple `unit specification`s, then it use two examples to explain how they work. It says `UNIT` could be a unit with or without surfix and `PATTERN` is `glob pattern`. So I'm regard it as an erratum in `systemctl --help`. The correct paramter for `is-active` is `UNIT` instead of `PATTERN`, as well as `start` or other commands.
+> #### <div class="force-white"> Quick Summary</div>
+> |Name|Description|Examples|
+> |-|-|-|
+> |UNIT|a unit with or without surfix|`is-active`, `start`, ...|
+> |PATTERN|glob pattern|`list-units`|
 ### 4. is-enable
 To test this command. I need to know about what's the difference between `active` and `enable`, I check the status of `ssh.service` via `systemctl list-units ssh.servce` first, it yields
 ```
@@ -284,8 +295,12 @@ After I run the command, I shows
 Synchonizing state of ssh.service with SysV service srcipt with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable ssh
 ```
-Interesting... A new term pops up: `Sysv`
+Interesting... A new term pops up: `Sysv`.
+
 To F\*\*king knowing about what's going on. I search for `Sysv`, and I found `SysV` seems to be a init
+
+> #### <div class="force-white">Quick Summary</div>
+> I stop on `Sysv` and I should keep research on this later. I feel the best way is to write my own service and observe the file or memory changes of each stage.
 
 
 
