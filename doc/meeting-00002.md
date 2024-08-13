@@ -5,7 +5,22 @@
 - **4:30-6pm:** OKR (1 on 1) with each developer
 
 ## Outline
-- **[Gitbook](#gitbook)**
+- [Meeting - Sprint 32 - Day 4 - Regular](#meeting---sprint-32---day-4---regular)
+  - [Agenda](#agenda)
+  - [Outline](#outline)
+    - [Gitbook](#gitbook)
+    - [AI Training - Dentistry](#ai-training---dentistry)
+  - [AI Inference - Dentistry](#ai-inference---dentistry)
+    - [MISARS Core Fundation](#misars-core-fundation)
+    - [UI/UX](#uiux)
+  - [Developer](#developer)
+    - [OpenCV C++ Issue](#opencv-c-issue)
+    - [Review Dentistry Achivement](#review-dentistry-achivement)
+    - [Urology](#urology)
+    - [Future Meeting](#future-meeting)
+    - [Future Work](#future-work)
+    - [Issues](#issues)
+
 
 ### Gitbook
 - Setup all the gitbook document.
@@ -83,14 +98,13 @@
 |YAUN meeting||
 
 ### Future Work
-|Title|Description|Deadline|
-|-|-|-|
-|Ask for Document|the Project Urology overview Document|
-|Conference in Vietname||in the end of November|
-|A Demo|A small demo of dentistry inference that we can show on ABP|in the end of September|
+|Title|Description|Participant|Deadline|
+|-|-|-|-|
+|Ask for Document|the Project Urology overview Document||
+|Conference in Vietname||Julie|in the end of November|
+|A Demo|A small demo of dentistry inference that we can show on ABP|Julie, Eason|in the end of September|
 
-### Issues4
-
+### Issues
 |ID|Title|Description|
 |-|-|-|
-|0|Post-Processing|our current inference still noisy in current stage. W goona try other models and pick the best model and we start to tune it.|
+|0|Post-Processing|our current inference is still noisy at current stage. We gonna try other models, pick the best model,and start tuning it.|

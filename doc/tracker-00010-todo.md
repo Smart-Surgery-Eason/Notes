@@ -9,6 +9,11 @@
 |5|[Delete Redundent EC2 Instance][5]|||![In Progress]|||
 |6|[Write a Vi Learning Note][6]|||![In Progress]|Manchi||
 |7|[Smart 360 Project for Dr. Wu][7]||Fri Aug 16 2024 18:00|![In Progress]|Julie|Remember to report things after Mason reply|
+|8|[][8]|||||
+|9|[][9]|||||
+|10|[][10]|||||
+|11|[][11]|||||
+|12|[][12]|||||
 
 [0]: ./todo-00000.md
 [1]: ./todo-00001.md
@@ -18,7 +23,11 @@
 [5]: ./todo-00005.md
 [6]: ./todo-00006.md
 [7]: ./todo-00007.md
-
+[8]: ./todo-00008.md
+[9]: ./todo-00009.md
+[10]: ./todo-00010.md
+[11]: ./todo-00011.md
+[12]: ./todo-00012.md
 
 [Pending]: https://img.shields.io/badge/Pending-darkgray
 [Done]: https://img.shields.io/badge/Done-green

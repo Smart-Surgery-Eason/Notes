@@ -85,6 +85,15 @@ docker run -it $COMMON_DOCKER_FLAGS $HOLOSCAN_IMG --gpu --worker
 ---
 
 ### Small Window
+enter your image id
+```
+HOLOSCAN_IMG=
+```
+#### Trial-0
+```
+docker run --rm --net=host --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it $HOLOSCAN_IMG
+```
+#### Trail-1
 ```
 docker run --rm --net=host --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it $HOLOSCAN_IMG
 ```
@@ -93,3 +102,6 @@ docker run --rm --net=host --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all --
 [learn-github-action]: https://github.com/smartsurgerytek/dentistry-inference-holoscan/settings/actions/runners/new?arch=x64&os=linux
 
 [draft]: https://img.shields.io/badge/draft-red
+
+## Troubleshooting
+# Issue 0 - 
