@@ -1,3 +1,7 @@
+**Participant:** Ezra, Eason
+
+---
+This is a short dialogue 
 ### Todos
 - [ ] [Manchi PTT](https://docs.google.com/presentation/d/1J29A8D1rEBx7HbnOjjrRfVTWUgvtYI9Yo-6L6Ejc_dQ/edit#slide=id.p) - (the 7th day, Wed) (Ezra Sent Message)
 - [ ] Using Official Operator to Record will be Explosive report to manchi
