@@ -11,3 +11,6 @@ Monai Endoscopic Tool Seg: https://github.com/nvidia-holoscan/holohub/tree/main/
 
 ## Model-Zoo Models
 Endoscopic Tool Segmentation: https://github.com/Project-MONAI/model-zoo/tree/dev/models/endoscopic_tool_segmentation
+
+## SmartSurgery GitBook
+https://app.gitbook.com/o/UsADJVevIOjYFfGWWHHj/s/tb1NDPEZPfDNNaQu6JTV

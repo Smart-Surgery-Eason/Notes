@@ -104,4 +104,4 @@ docker run --rm --net=host --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all --
 [draft]: https://img.shields.io/badge/draft-red
 
 ## Troubleshooting
-# Issue 0 - 
+[LIBTIFF_4.0 problem](issue-00003.md)
