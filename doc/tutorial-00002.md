@@ -1,3 +1,6 @@
+- **Author:** Eason
+- **Date:** Wed Aug 14 2024
+---
 # Enroll An Apple Developer Account
 You should login to your Apple account on your Mac first
 ### Step 1. Install `Apple Developer` App
