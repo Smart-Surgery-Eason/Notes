@@ -2,6 +2,11 @@
 ```bash
 docker build . -t holoscan_dentistry:v0.1.0-manual_test --build-arg BASE_IMAGE=nvcr.io/nvidia/clara-holoscan/holoscan:v2.2.0-igpu
 ```
+#### Docker Build Flag
+|TAG|||
+|-|-|-|
+|--build-arg|||
+
 
 ### How to Run
 

@@ -1,11 +1,11 @@
-# Meeting - Sprint 32 - Day 4 - Regular
+# Meeting - Sprint 32 - Day 7 - Regular
 ## Agenda
 - **2-3pm:** AAMA Meeting with 硏華
 - **3-4:30pm:** MiSARS meeting
 - **4:30-6pm:** OKR (1 on 1) with each developer
 
 ## Outline
-- [Meeting - Sprint 32 - Day 4 - Regular](#meeting---sprint-32---day-4---regular)
+- [Meeting - Sprint 32 - Day 7 - Regular](#meeting---sprint-32---day-7---regular)
   - [Agenda](#agenda)
   - [Outline](#outline)
     - [Gitbook](#gitbook)
