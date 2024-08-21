@@ -3,6 +3,8 @@
 |-|-|-|-|
 |0|[Untitled][0]|Aug 7, 2024|Wed|
 |1|[Untitled][1]|Aug 8, 2024|Thu|
+|2|[Untitled][2]|Aug 16, 2024|Fri|
 
 [0]: ./todos-00000.md
 [1]: ./todos-00001.md
+[2]: ./todos-00002.md
