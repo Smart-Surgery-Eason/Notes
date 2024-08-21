@@ -1,9 +1,9 @@
 # To-dos Tracker
-|ID|Name|Date|Week|
+|ID|Name|Start Date|End Date|
 |-|-|-|-|
-|0|[Untitled][0]|Aug 7, 2024|Wed|
-|1|[Untitled][1]|Aug 8, 2024|Thu|
-|2|[Untitled][2]|Aug 16, 2024|Fri|
+|0|[Untitled][0]|Wed Aug 7 2024||
+|1|[Untitled][1]|Thu Aug 8 2024||
+|2|[Smart360-IOS for Dr. Wu][2]|Fri Aug 16 2024|Wed Aug 21 2024|
 
 [0]: ./todos-00000.md
 [1]: ./todos-00001.md
