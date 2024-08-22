@@ -27,7 +27,7 @@
 ### Github Repo Naming Convention
 Template:
 ```
-clinical-service-teck-owner
+domain-service-technology-owner
 ```
 Example:
 ```

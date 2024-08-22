@@ -2,20 +2,30 @@
 ```bash
 docker build . -t holoscan_dentistry:v0.1.0-manual_test --build-arg BASE_IMAGE=nvcr.io/nvidia/clara-holoscan/holoscan:v2.2.0-igpu
 ```
+
+### How to Run
+- Set Variables
+  ```bash
+  export HOLOSCAN_IMG="holoscan_dentistry:v0.1.0-manual_test"
+  ```
+- Run ping distributed (c++) in iGPU container
+  ```bash
+  sudo docker run --rm --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all --cap-add CAP_SYS_PTRACE --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --net=host --gpus=all -it $HOLOSCAN_IMG
+  ```
+
 #### Docker Build Flag
 |TAG|||
 |-|-|-|
 |--build-arg|||
 
 
-### How to Run
 
 ### Learn Github Action
 Use [this][learn-github-action] as an example to try.
 
 ### Vim Modes
 |Mode Name|Naviation|Description|
-|-|-|
+|-|-|-|
 |NORMAL_MODE|press `ESC` from other modes to Enter|
 |INSERT_MODE|press `i` from `INSERT_MODE` to Enter|
 |COMMAND_LINE_MODE|type `:` in `NORMAL_MODE`|
@@ -71,22 +81,14 @@ Use [this][learn-github-action] as an example to try.
 - Source: https://docs.nvidia.com/holoscan/sdk-user-guide/use_igpu_with_dgpu.html
 - Run the bash below
 ---
-# Run images
-### Step 1. Set Variables
-```bash
-COMMON_DOCKER_FLAGS="--rm --net=host --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=all  --cap-add CAP_SYS_PTRACE --ipc=host --ulimit memlock=-1 --ulimit stack=67108864"
-export HOLOSCAN_IMG="holoscan_dentistry:v0.1.0-manual_test"
-```
-### Step 2. Run ping distributed (c++) in iGPU container
-```
-docker run -it $COMMON_DOCKER_FLAGS $HOLOSCAN_IMG --gpu --worker
-```
+
 
 ### docker run flags
 |Flag|Description|Keep|Trying Discard|
 |-|-|-|-|
-|`--rm`||
-|`--cap-add CAP_SYS_PTRACE`|||✅|
+|`--rm`|Remove the created container after stoping|❌|✅|
+|`--cap-add CAP_SYS_PTRACE`||❌|✅|
+|`--ipc`|
 ---
 
 ### Small Window
