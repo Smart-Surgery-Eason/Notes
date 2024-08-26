@@ -1,0 +1,149 @@
+{
+  "AmiLaunchIndex": 0,
+  "ImageId": "ami-0afe15299a6e1568e",
+  "InstanceId": "i-07234336a547c546d",
+  "InstanceType": "g5.2xlarge",
+  "LaunchTime": "2024-08-26T01:54:47+00:00",
+  "Monitoring": {
+    "State": "disabled"
+  },
+  "Placement": {
+    "AvailabilityZone": "us-east-1a",
+    "GroupName": "",
+    "Tenancy": "default"
+  },
+  "PrivateDnsName": "ip-172-31-14-203.ec2.internal",
+  "PrivateIpAddress": "172.31.14.203",
+  "ProductCodes": [
+    {
+      "ProductCodeId": "64g24n0wem7a8nuhfum3097vb",
+      "ProductCodeType": "marketplace"
+    }
+  ],
+  "PublicDnsName": "ec2-44-199-183-18.compute-1.amazonaws.com",
+  "PublicIpAddress": "44.199.183.18",
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  },
+  "StateTransitionReason": "",
+  "SubnetId": "subnet-0f9f4883d69a40ad9",
+  "VpcId": "vpc-0bf9912ab0033717b",
+  "Architecture": "x86_64",
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/sda1",
+      "Ebs": {
+        "AttachTime": "2024-08-21T08:21:10+00:00",
+        "DeleteOnTermination": true,
+        "Status": "attached",
+        "VolumeId": "vol-0aade0bbe6ed97aef"
+      }
+    }
+  ],
+  "ClientToken": "terraform-20240821082059564400000001",
+  "EbsOptimized": false,
+  "EnaSupport": true,
+  "Hypervisor": "xen",
+  "NetworkInterfaces": [
+    {
+      "Association": {
+        "IpOwnerId": "amazon",
+        "PublicDnsName": "ec2-44-199-183-18.compute-1.amazonaws.com",
+        "PublicIp": "44.199.183.18"
+      },
+      "Attachment": {
+        "AttachTime": "2024-08-21T08:21:09+00:00",
+        "AttachmentId": "eni-attach-053057bc9c31fa8b4",
+        "DeleteOnTermination": true,
+        "DeviceIndex": 0,
+        "Status": "attached",
+        "NetworkCardIndex": 0
+      },
+      "Description": "",
+      "Groups": [
+        {
+          "GroupName": "default",
+          "GroupId": "sg-0da9f69dcc92aab1a"
+        }
+      ],
+      "Ipv6Addresses": [],
+      "MacAddress": "02:b2:9e:04:fb:b5",
+      "NetworkInterfaceId": "eni-0028042cb04cb2daa",
+      "OwnerId": "637423479658",
+      "PrivateDnsName": "ip-172-31-14-203.ec2.internal",
+      "PrivateIpAddress": "172.31.14.203",
+      "PrivateIpAddresses": [
+        {
+          "Association": {
+            "IpOwnerId": "amazon",
+            "PublicDnsName": "ec2-44-199-183-18.compute-1.amazonaws.com",
+            "PublicIp": "44.199.183.18"
+          },
+          "Primary": true,
+          "PrivateDnsName": "ip-172-31-14-203.ec2.internal",
+          "PrivateIpAddress": "172.31.14.203"
+        }
+      ],
+      "SourceDestCheck": true,
+      "Status": "in-use",
+      "SubnetId": "subnet-0f9f4883d69a40ad9",
+      "VpcId": "vpc-0bf9912ab0033717b",
+      "InterfaceType": "interface"
+    }
+  ],
+  "RootDeviceName": "/dev/sda1",
+  "RootDeviceType": "ebs",
+  "SecurityGroups": [
+    {
+      "GroupName": "default",
+      "GroupId": "sg-0da9f69dcc92aab1a"
+    }
+  ],
+  "SourceDestCheck": true,
+  "Tags": [
+    {
+      "Key": "Name",
+      "Value": "coder-eason-eason-holoscan-g5-virginia"
+    },
+    {
+      "Key": "Coder_Provisioned",
+      "Value": "true"
+    }
+  ],
+  "VirtualizationType": "hvm",
+  "CpuOptions": {
+    "CoreCount": 4,
+    "ThreadsPerCore": 2
+  },
+  "CapacityReservationSpecification": {
+    "CapacityReservationPreference": "open"
+  },
+  "HibernationOptions": {
+    "Configured": false
+  },
+  "MetadataOptions": {
+    "State": "applied",
+    "HttpTokens": "optional",
+    "HttpPutResponseHopLimit": 1,
+    "HttpEndpoint": "enabled",
+    "HttpProtocolIpv6": "disabled",
+    "InstanceMetadataTags": "disabled"
+  },
+  "EnclaveOptions": {
+    "Enabled": false
+  },
+  "BootMode": "uefi-preferred",
+  "PlatformDetails": "Linux/UNIX",
+  "UsageOperation": "RunInstances",
+  "UsageOperationUpdateTime": "2024-08-21T08:21:09+00:00",
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": false,
+    "EnableResourceNameDnsAAAARecord": false
+  },
+  "MaintenanceOptions": {
+    "AutoRecovery": "default"
+  },
+  "CurrentInstanceBootMode": "uefi"
+}
