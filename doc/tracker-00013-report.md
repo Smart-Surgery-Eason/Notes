@@ -5,6 +5,7 @@
 |1|[Development Plan: Sprint 32 - 38][1]||![done]|
 |2|[HoloHub Applications][2]|||
 |3|[Monai Deploy Example][3]|||
+|4|[QCap Notes][4]|||
 
 [0]: ./report-00000.md
 [1]: ./report-00001.md

@@ -12,6 +12,7 @@
 [2]: issue-00002.md
 [3]: issue-00003.md
 [4]: issue-00004.md
+[5]: issue-00005.md
 
 [open]: https://img.shields.io/badge/open-red
 [close]: https://img.shields.io/badge/close-green

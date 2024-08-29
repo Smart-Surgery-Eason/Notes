@@ -1,0 +1,19 @@
+smartsurgery@smartsurgery-igx:/workspace/holohub$ ./run launch endoscopy_tool_tracking > /tmp/log.txt
+[warning] [cuda_stream_handler.cpp:55] CudaStreamHandler's `defineParams` method has been renamed to `define_params`. The old name is deprecated and may be removed in a future release.
+[info] [gxf_executor.cpp:247] Creating context
+[smartsurgery-igx:3143 :0:3143] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x58)
+==== backtrace (tid:   3143) ====
+ 0  /opt/nvidia/holoscan/lib/libucs.so.0(ucs_handle_error+0x2cc) [0xffff91a5ba9c]
+ 1  /opt/nvidia/holoscan/lib/libucs.so.0(+0x2bc4c) [0xffff91a5bc4c]
+ 2  /opt/nvidia/holoscan/lib/libucs.so.0(+0x2bffc) [0xffff91a5bffc]
+ 3  linux-vdso.so.1(__kernel_rt_sigreturn+0) [0xffff9a3397dc]
+ 4  /opt/nvidia/holoscan/lib/libholoscan_core.so.2(_ZN8holoscan8Fragment8add_flowERKSt10shared_ptrINS_8OperatorEES5_St3setISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESD_ESt4lessISE_ESaISE_EE+0x68) [0xffff9933b798]
+ 5  /workspace/holohub/build/applications/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking(+0x36a88) [0xaaaab98c6a88]
+ 6  /opt/nvidia/holoscan/lib/libholoscan_core.so.2(_ZN8holoscan9AppDriver19check_configurationEv+0x3c) [0xffff99191e3c]
+ 7  /opt/nvidia/holoscan/lib/libholoscan_core.so.2(_ZN8holoscan9AppDriver3runEv+0x28) [0xffff9919c148]
+ 8  /workspace/holohub/build/applications/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking(+0x13ba8) [0xaaaab98a3ba8]
+ 9  /lib/aarch64-linux-gnu/libc.so.6(+0x273fc) [0xffff981e73fc]
+10  /lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98) [0xffff981e74cc]
+11  /workspace/holohub/build/applications/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking(+0x13f70) [0xaaaab98a3f70]
+=================================
+./run: line 83:  3143 Segmentation fault      (core dumped) /workspace/holohub/build/applications/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking --data /workspace/holohub/data/endoscopy
