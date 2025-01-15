@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "name": "helloworld",
+    "namespace": "nuclio",
+    "labels": { "nuclio.io/project-name": "default" }
+  },
+  "spec": {
+    "handler": "main:handler",
+    "runtime": "python:3.9",
+    "resources": { "requests": { "cpu": "25m", "memory": "1Mi" } },
+    "image": "nuclio/processor-helloworld:latest",
+    "triggers": {
+      "default-http": {
+        "class": "",
+        "kind": "http",
+        "name": "default-http",
+        "numWorkers": 1
+      }
+    },
+    "build": {
+      "functionSourceCode": "ZGVmIGhhbmRsZXIoY29udGV4dCwgZXZlbnQpOg0KICAgIHJldHVybiAiSGVsbG8sIFdvcmxkISI=",
+      "runtimeAttributes": { "repositories": [] },
+      "codeEntryType": "sourceCode",
+      "timestamp": 1734071504
+    },
+    "loggerSinks": [{ "level": "debug" }],
+    "platform": {},
+    "securityContext": {},
+    "disableDefaultHTTPTrigger": false,
+    "eventTimeout": ""
+  },
+  "status": {
+    "state": "ready",
+    "logs": [
+      {
+        "level": "info",
+        "message": "Deploying function",
+        "name": "helloworld",
+        "requestID": "d13c435cfaad/UIgtARlxX0-000043",
+        "time": 1734071469556.9417
+      },
+      {
+        "builderKind": "docker",
+        "level": "info",
+        "message": "Building",
+        "name": "helloworld",
+        "requestID": "d13c435cfaad/UIgtARlxX0-000043",
+        "time": 1734071469556.9631,
+        "versionInfo": "Label: 1.14.0, Git commit: f4e6b43a4d30b683e4cb8fddd79e8648e65045ae, OS: linux, Arch: amd64, Go version: go1.21.13"
+      },
+      {
+        "level": "info",
+        "message": "Staging files and preparing base images",
+        "name": "deployer",
+        "time": 1734071469671.777
+      },
+      {
+        "level": "info",
+        "message": "Building processor image",
+        "name": "deployer",
+        "registryURL": "",
+        "requestID": "d13c435cfaad/UIgtARlxX0-000043",
+        "taggedImageName": "nuclio/processor-helloworld:latest",
+        "time": 1734071469718.648
+      },
+      {
+        "image": "nuclio/processor-helloworld:latest",
+        "level": "info",
+        "message": "Build complete",
+        "name": "deployer",
+        "requestID": "d13c435cfaad/UIgtARlxX0-000043",
+        "time": 1734071504889.433
+      },
+      {
+        "functionName": "helloworld",
+        "level": "info",
+        "message": "Cleaning up before deployment",
+        "name": "deployer",
+        "time": 1734071504893.9795
+      },
+      {
+        "externalInvocationURLs": [
+          "192.168.65.254:55477",
+          "fdc4:f303:9324::254:55477"
+        ],
+        "functionName": "helloworld",
+        "httpPort": 55477,
+        "internalInvocationURLs": ["172.17.0.3:8080"],
+        "level": "info",
+        "message": "Function deploy complete",
+        "name": "deployer",
+        "requestID": "d13c435cfaad/UIgtARlxX0-000043",
+        "time": 1734071507439.09
+      }
+    ],
+    "httpPort": 55477,
+    "internalInvocationUrls": ["172.17.0.3:8080"],
+    "externalInvocationUrls": [
+      "192.168.65.254:55477",
+      "fdc4:f303:9324::254:55477"
+    ]
+  }
+}

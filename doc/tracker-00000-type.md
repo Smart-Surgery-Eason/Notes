@@ -1,23 +1,23 @@
 # Type Tracker
-|ID|Name|Description|Status|Note|
-|-|-|-|-|-|
-|0|[Type][0]|Define document type and link to its trackers.||Need to add descriptions to all types|
-|1|[Experiment][1]|A lab to try new things.||The `systemctl` experiment is pending|
-|2|[Dialogue][2]||||
-|3|[Issue][3]||||
-|4|[ChatGPT][4]||||
-|5|[References][5]||||
-|6|[Tutorial][6]||||
-|7|[Status][7]||||
-|8|[File][8]||||
-|9|[Todos][9]||||
-|10|[Todo][10]||||
-|11|[Document][11]||||
-|12|[Message][12]||||
-|13|[Report][13]||||
-|14|[Draft][14]||||
-|15|[Meeting][15]||||
-|16|[Image][16]||||
+| ID  | Name            | Description                                    | Status | Note                                  |
+| --- | --------------- | ---------------------------------------------- | ------ | ------------------------------------- |
+| 0   | [Type][0]       | Define document type and link to its trackers. |        | Need to add descriptions to all types |
+| 1   | [Experiment][1] | A lab to try new things.                       |        | The `systemctl` experiment is pending |
+| 2   | [Dialogue][2]   |                                                |        |                                       |
+| 3   | [Issue][3]      |                                                |        |                                       |
+| 4   | [ChatGPT][4]    |                                                |        |                                       |
+| 5   | [References][5] |                                                |        |                                       |
+| 6   | [Tutorial][6]   |                                                |        |                                       |
+| 7   | [Status][7]     |                                                |        |                                       |
+| 8   | [File][8]       |                                                |        |                                       |
+| 9   | [Todos][9]      |                                                |        |                                       |
+| 10  | [Todo][10]      |                                                |        |                                       |
+| 11  | [Document][11]  |                                                |        |                                       |
+| 12  | [Message][12]   |                                                |        |                                       |
+| 13  | [Report][13]    |                                                |        |                                       |
+| 14  | [Draft][14]     |                                                |        |                                       |
+| 15  | [Meeting][15]   |                                                |        |                                       |
+| 16  | [Image][16]     |                                                |        |                                       |
 
 
 [0]: tracker-00000-type.md

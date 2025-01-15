@@ -4,7 +4,7 @@ On your PC, run:
 ```powershell
 ssh smartsurgery@192.168.1.224
 ```
-follow the prompt, and enter the password. 
+follow the prompt, and enter the password.
 
 >If you don't know the password, ask **Eason**.
 

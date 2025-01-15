@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "name": "pth-foolwood-siammask",
+    "namespace": "nuclio",
+    "labels": { "nuclio.io/project-name": "cvat" },
+    "annotations": { "name": "SiamMask", "spec": "", "type": "tracker" }
+  },
+  "spec": {
+    "description": "Fast Online Object Tracking and Segmentation",
+    "disable": true,
+    "handler": "main:handler",
+    "runtime": "python:3.9",
+    "env": [
+      {
+        "name": "PYTHONPATH",
+        "value": "/opt/nuclio/SiamMask:/opt/nuclio/SiamMask/experiments/siammask_sharp"
+      }
+    ],
+    "resources": { "requests": { "cpu": "25m", "memory": "1Mi" } },
+    "image": "cvat.pth.foolwood.siammask:latest",
+    "targetCPU": 75,
+    "triggers": {
+      "myHttpTrigger": {
+        "class": "",
+        "kind": "http",
+        "name": "myHttpTrigger",
+        "numWorkers": 2,
+        "workerAvailabilityTimeoutMilliseconds": 10000,
+        "attributes": { "maxRequestBodySize": 33554432 },
+        "maxWorkers": 2
+      }
+    },
+    "version": 1,
+    "build": {
+      "image": "cvat.pth.foolwood.siammask",
+      "baseImage": "ubuntu:20.04",
+      "directives": {
+        "preCopy": [
+          { "kind": "ENV", "value": "PATH=\"/root/miniconda3/bin:${PATH}\"" },
+          { "kind": "ARG", "value": "PATH=\"/root/miniconda3/bin:${PATH}\"" },
+          {
+            "kind": "RUN",
+            "value": "apt update \u0026\u0026 apt install -y --no-install-recommends wget git ca-certificates libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 \u0026\u0026 rm -rf /var/lib/apt/lists/*"
+          },
+          {
+            "kind": "RUN",
+            "value": "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \u0026\u0026 chmod +x Miniconda3-latest-Linux-x86_64.sh \u0026\u0026 bash Miniconda3-latest-Linux-x86_64.sh -b \u0026\u0026 rm -f Miniconda3-latest-Linux-x86_64.sh"
+          },
+          { "kind": "WORKDIR", "value": "/opt/nuclio" },
+          { "kind": "RUN", "value": "conda create -y -n siammask python=3.9" },
+          {
+            "kind": "SHELL",
+            "value": "[\"conda\", \"run\", \"-n\", \"siammask\", \"/bin/bash\", \"-c\"]"
+          },
+          {
+            "kind": "RUN",
+            "value": "git clone https://github.com/foolwood/SiamMask.git"
+          },
+          {
+            "kind": "RUN",
+            "value": "pip install Cython colorama 'numpy\u003c1.20' requests fire matplotlib numba scipy h5py pandas tqdm tensorboardX opencv_python torch torchvision jsonpickle"
+          },
+          { "kind": "RUN", "value": "conda install -y gcc_linux-64" },
+          {
+            "kind": "RUN",
+            "value": "cd SiamMask \u0026\u0026 bash make.sh \u0026\u0026 cd -"
+          },
+          {
+            "kind": "RUN",
+            "value": "wget -P SiamMask/experiments/siammask_sharp http://www.robots.ox.ac.uk/~qwang/SiamMask_DAVIS.pth"
+          },
+          {
+            "kind": "ENTRYPOINT",
+            "value": "[\"conda\", \"run\", \"--no-capture-output\", \"-n\", \"siammask\"]"
+          }
+        ]
+      },
+      "codeEntryType": "image",
+      "timestamp": 1733729641
+    },
+    "platform": {
+      "attributes": {
+        "mountMode": "volume",
+        "restartPolicy": { "maximumRetryCount": 3, "name": "always" }
+      }
+    },
+    "readinessTimeoutSeconds": 120,
+    "securityContext": {},
+    "disableDefaultHTTPTrigger": false,
+    "eventTimeout": "30s"
+  },
+  "status": {
+    "state": "ready",
+    "httpPort": -1,
+    "internalInvocationUrls": [":8080"],
+    "externalInvocationUrls": ["192.168.65.254:-1", "fdc4:f303:9324::254:-1"]
+  }
+}
